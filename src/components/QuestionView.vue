@@ -1,7 +1,7 @@
 <template>
   <section>
     <MDBListGroup light small>
-      <h3 v-html="currentQuestion.question"></h3>
+      <h3 v-html="currentQuestion.question" align="center"></h3>
       <MDBListGroupItem
         v-for="(answer, index) in answers"
         :key="index"
