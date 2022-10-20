@@ -8,6 +8,7 @@
             label="Number of Questions(10 by default)"
             type="number"
             style="height: calc(3.5rem + 2px)"
+            v-model="noOfQns"
           />
         </MDBCol>
         <MDBCol sm="8" md="4">
@@ -118,6 +119,10 @@ export default {
         this.index++;
       } else {
         alert(`Game Over. You got ${this.numCorrect} out of ${this.numTotal}`);
+        this.questions.length = 0;
+        this.noOfQns = 10;
+        this.category = "";
+        this.difficulty = "";
         return;
       }
     },
@@ -143,9 +148,6 @@ export default {
           this.loading = false;
         });
     },
-  },
-  mounted() {
-    //this.getQuestions();
   },
 };
 </script>
