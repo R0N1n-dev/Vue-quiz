@@ -149,6 +149,11 @@ export default {
         });
     },
   },
+  watch:{
+    questions:{
+      deep: true
+    }
+  }
 };
 </script>
 
