@@ -65,7 +65,10 @@ export default {
       handler() {
         this.selectedIndex = null;
         this.answered = false;
-        this.shuffleAnswers();
+        this.shuffledAnswers = []; // Clear shuffled answers when a new question is received
+      this.$nextTick(() => {
+        this.shuffleAnswers(); // Shuffle the answers after the DOM has updated
+      });
       },
     },
 
