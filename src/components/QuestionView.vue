@@ -65,10 +65,7 @@ export default {
       handler() {
         this.selectedIndex = null;
         this.answered = false;
-        this.shuffledAnswers = []; // Clear shuffled answers when a new question is received
-      this.$nextTick(() => {
-        this.shuffleAnswers(); // Shuffle the answers after the DOM has updated
-      });
+      this.shuffleAnswers();
       },
     },
 
@@ -94,10 +91,10 @@ export default {
         ...this.currentQuestion.incorrect_answers,
         this.currentQuestion.correct_answer,
       ];
-      this.shuffledAnswers = _.shuffle(answers);
-      this.correctIndex = this.shuffledAnswers.indexOf(
-        this.currentQuestion.correct_answer
-      );
+      this.shuffledAnswers = answers.sort(() => Math.random() - 0.5);
+
+  // Find the correct index in the shuffled array
+  this.correctIndex = this.shuffledAnswers.findIndex(answer => answer === this.currentQuestion.correct_answer);
     },
     answerClass(index) {
       let answerClass = "";
