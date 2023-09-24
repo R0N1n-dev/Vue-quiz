@@ -123,6 +123,9 @@ export default {
         this.noOfQns = 10;
         this.category = "";
         this.difficulty = "";
+        this.index = 0;
+        this.numTotal = 0;
+        this.numCorrect = 0;
         return;
       }
     },
@@ -148,11 +151,6 @@ export default {
           this.loading = false;
         });
     },
-  },
-  watch:{
-    questions:{
-      deep: true
-    }
   }
 };
 </script>
