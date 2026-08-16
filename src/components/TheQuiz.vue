@@ -2,7 +2,9 @@
   <main class="mb-3">
     <MDBContainer class="mt-5">
       <MDBRow class="justify-content-center gx-4 gy-4">
-        <h4 align="center">Please select some options or just begin with a random quiz</h4>
+        <h4 align="center">
+          Please select some options or just begin with a random quiz
+        </h4>
         <MDBCol sm="8" md="4">
           <MDBInput
             label="Number of Questions(10 by default)"
@@ -61,7 +63,7 @@
             align="center"
             :numCorrect="numCorrect"
           />
-          <QuestionView
+          <QuestionView2
             v-if="questions.length"
             :currentQuestion="questions[index]"
             :next="next"
@@ -151,9 +153,8 @@ export default {
           this.loading = false;
         });
     },
-  }
+  },
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
