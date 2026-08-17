@@ -7,6 +7,7 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "@sentry/vue": "^10.70.0",
     "core-js": "^3.23.0",
     "lodash": "^4.17.21",
     "mdb-vue-ui-kit": "^3.0.0",
