@@ -1,5 +1,5 @@
 import { createApp } from "vue";
-import "mdb-vue-ui-kit/css/mdb.min.css"
+import "./assets/main.css";
 import App from "./App.vue";
 import * as Sentry from "@sentry/vue";
 const app = createApp(App)
