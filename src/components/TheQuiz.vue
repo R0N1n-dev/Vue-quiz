@@ -404,6 +404,7 @@ export default {
 
 .stepper-btn:hover:not(:disabled) {
   background: var(--gold);
+  color: #1d1a13;
 }
 
 .stepper-btn:disabled {
@@ -458,6 +459,7 @@ export default {
 
 .select:hover {
   background: var(--gold);
+  color: #1d1a13;
 }
 
 .select:focus-visible {
@@ -659,6 +661,7 @@ export default {
   gap: 0.375rem;
   padding: 0.25rem 0.75rem;
   background: var(--gold);
+  color: #1d1a13;
   border: 2px solid var(--line);
   border-radius: 999px;
   font-variant-numeric: tabular-nums;
@@ -702,6 +705,7 @@ export default {
 
 .tier-gold {
   background: var(--gold);
+  color: #1d1a13;
 }
 
 .tier-blue {

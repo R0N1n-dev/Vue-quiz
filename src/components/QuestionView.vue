@@ -149,6 +149,7 @@ export default {
 
 .answer:not(:disabled):hover {
   background: var(--gold);
+  color: #1d1a13;
   transform: translateY(-1px);
 }
 

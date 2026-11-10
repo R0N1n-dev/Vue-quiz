@@ -124,11 +124,11 @@ export default {
 
 @media (max-width: 640px) {
   .shape {
-    display: none;
+    animation: none;
   }
 
-  .shape:nth-child(3n + 1) {
-    display: grid;
+  .shape:not(:nth-child(3n + 1)) {
+    display: none;
   }
 }
 </style>
